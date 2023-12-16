@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+
+  --addition-color: hsl(0, 0%, 100%);
+
+  --main-b-radius: 15px;
+
+  --transition: all 0.2s ease-in;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.125rem;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--dark-cyan);
+}
+
+main {
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+}
+
+.main-card {
+  background-color: var(--addition-color);
+  border-radius: var(--main-b-radius);
+  overflow: hidden;
+  max-width: 335px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.top-side {
+  position: relative;
+  border-top-right-radius: var(--main-b-radius);
+  border-top-left-radius: var(--main-b-radius);
+}
+
+.top-side img:first-child {
+  max-width: 100%;
+}
+
+.top-side img:last-child {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 5px solid var(--addition-color);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.styled-text {
+  font-weight: 400;
+  padding-left: 5px;
+  color: var(--dark-gray);
+}
+
+.description h1 {
+  font-size: 1.12rem;
+}
+
+.description p {
+  font-weight: 400;
+  color: var(--dark-gray);
+  font-size: 0.88rem;
+  padding-top: 10px;
+}
+
+.separation {
+  height: 1px;
+  max-width: 100%;
+  background-color: var(--dark-gray);
+  opacity: 0.3;
+  margin-top: 25px;
+}
+
+.social-info {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.info h2 {
+  text-align: center;
+  font-size: 1.18rem;
+}
+
+.info p {
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 2px;
+  padding-top: 5px;
+  color: var(--dark-gray);
+}
+
+.top-background {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  transition: var(--transition);
+  z-index: -10;
+}
+
+.bottom-background {
+  position: absolute;
+  top: 100%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  transition: var(--transition);
+  z-index: -10;
+}
+
+/* Additional */
+
+.attribution {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 75%;
+  left: 50%;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media queries */
+
+@media screen and (min-width: 1600px) {
+  .top-background {
+    top: 0;
+    left: 25%;
+  }
+
+  .bottom-background {
+    top: 100%;
+    left: 75%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .top-background {
+    top: 0;
+    left: 10%;
+  }
+
+  .bottom-background {
+    top: 100%;
+    left: 90%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .top-background {
+    top: 0;
+    left: 0%;
+  }
+
+  .bottom-background {
+    top: 100%;
+    left: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .top-background {
+    top: 0;
+    left: -5%;
+  }
+
+  .bottom-background {
+    top: 100%;
+    left: 105%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .top-background {
+    top: 0;
+    left: -10%;
+  }
+
+  .bottom-background {
+    top: 100%;
+    left: 110%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .top-background {
+    top: 0;
+    left: -15%;
+  }
+
+  .bottom-background {
+    top: 100%;
+    left: 115%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .top-background {
+    top: 0;
+    left: -25%;
+  }
+
+  .bottom-background {
+    top: 100%;
+    left: 125%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .top-background {
+    top: 0;
+    left: -35%;
+  }
+
+  .bottom-background {
+    top: 100%;
+    left: 135%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .top-background {
+    top: 0;
+    left: -45%;
+  }
+
+  .bottom-background {
+    top: 100%;
+    left: 145%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .top-background {
+    top: 0;
+    left: -55%;
+  }
+
+  .bottom-background {
+    top: 100%;
+    left: 155%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .top-background {
+    top: 0;
+    left: -70%;
+  }
+
+  .bottom-background {
+    top: 100%;
+    left: 170%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .top-background {
+    top: 0;
+    left: -75%;
+  }
+
+  .bottom-background {
+    top: 100%;
+    left: 175%;
+  }
+}
