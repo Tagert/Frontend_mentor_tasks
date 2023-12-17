@@ -32,7 +32,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/Tagert/Frontend_mentor_tasks/tree/master/1_qr-code-component-main)
-- Live Site URL: [Add live site URL here](https://tagert.github.io/Frontend_mentor_tasks/1_qr-code-component-main/)
+- Live Site URL: [Add live site URL here](https://tagert.github.io/Frontend_mentor_tasks/3_product-preview-card-component-main/)
 
 ## My process
 
