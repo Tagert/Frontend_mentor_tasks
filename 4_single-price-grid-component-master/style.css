@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap");
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+
+  --primarily-b-radius: 5px;
+
+  --main-padding-26_38: clamp(1.625rem, 1.36086rem + 1.127vw, 2.375rem);
+  --secondary-padding-30_40: clamp(1.875rem, 1.65492rem + 0.939vw, 2.5rem);
+  --bottom-padding: 20px;
+
+  --h1-font-20_24: clamp(1.25rem, 1.16188rem + 0.376vw, 1.5rem);
+  --h2-font-16_17: clamp(1rem, 0.97797rem + 0.094vw, 1.0625rem);
+  --p-font-14_16: clamp(0.875rem, 0.83094rem + 0.188vw, 1rem);
+  --p-font-13_14: clamp(0.8125rem, 0.79047rem + 0.094vw, 0.875rem);
+  --p-font-12_13: clamp(0.75rem, 0.72797rem + 0.094vw, 0.8125rem);
+
+  --primarily-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  --secondarily-box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
+
+  --transition: all 0.3s ease-in;
+}
+
+h2 {
+  font-size: clamp(1rem, 0.97797rem + 0.094vw, 1.0625rem);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-size: 1rem;
+  font-family: "Karla", sans-serif;
+  background-color: var(--grayish-blue);
+}
+
+footer {
+  position: absolute;
+  top: 98%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+  padding: var(--secondary-padding-30_40);
+}
+
+.main-card {
+  max-width: 640px;
+  overflow: hidden;
+  background-color: var(--light-gray);
+  border-radius: var(--primarily-b-radius);
+}
+
+.top-side,
+.left-side,
+.right-side {
+  padding: var(--main-padding-26_38);
+}
+
+.top-side h1 {
+  font-size: var(--h1-font-20_24);
+  padding-bottom: var(--bottom-padding);
+  color: var(--cyan);
+}
+
+.top-side h2 {
+  font-size: var(--h2-font-16_18);
+  font-weight: 700;
+  padding-bottom: var(--bottom-padding);
+  color: var(--bright-yellow);
+}
+
+.top-side p {
+  font-size: var(--p-font-14_16);
+  line-height: 1.8;
+  color: var(--grayish-blue);
+}
+
+.left-side {
+  background-color: var(--cyan);
+}
+
+.left-side h2 {
+  font-size: var(--h2-font-16_18);
+  color: var(--light-gray);
+}
+
+.left-side > p {
+  font-size: var(--h2-font-16_18);
+  font-weight: 400;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  color: var(--light-gray);
+}
+
+.primarily-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 48px;
+  border-radius: 5px;
+  box-shadow: var(--primarily-box-shadow);
+  background-color: var(--bright-yellow);
+}
+
+.primarily-btn:hover {
+  box-shadow: var(--secondarily-box-shadow);
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.primarily-btn a {
+  font-size: var(--h2-font-16_18);
+  text-decoration: none;
+  color: var(--light-gray);
+}
+
+.price-tag {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.price-tag p:first-child {
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+  padding-top: 15px;
+  color: var(--light-gray);
+}
+
+.price-tag p:last-child {
+  opacity: 0.7;
+  font-weight: 200;
+  padding-top: 15px;
+  color: var(--light-gray);
+}
+
+.right-side {
+  background-color: #4abfbc;
+}
+
+.right-side h2 {
+  font-size: var(--h2-font-16_18);
+  padding-bottom: var(--bottom-padding);
+  color: var(--light-gray);
+}
+
+.right-side li {
+  list-style: none;
+  font-size: var(--p-font-13_14);
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding-bottom: 4px;
+  opacity: 0.95;
+  color: var(--light-gray);
+}
+
+/* Additional */
+
+.attribution {
+  font-size: var(--p-font-12_13);
+  text-align: center;
+  min-width: 300px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media queries */
+
+@media screen and (min-width: 700px) {
+  .main-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 230px 1fr;
+  }
+
+  .top-side {
+    display: grid;
+    align-content: space-around;
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .top-side h1,
+  .top-side h2 {
+    padding-bottom: 0;
+  }
+
+  .left-side {
+    grid-area: 2 / 1 / 2 / 2;
+  }
+
+  .left-side > P {
+    padding-top: 5px;
+  }
+
+  .right-side {
+    grid-area: 2 / 2 / 2 / 3;
+  }
+}
