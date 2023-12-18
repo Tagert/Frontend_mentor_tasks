@@ -7,6 +7,8 @@
   --light-gray: hsl(204, 43%, 93%);
   --grayish-blue: hsl(218, 22%, 67%);
 
+  --additional-color: #fff;
+
   --primarily-b-radius: 5px;
 
   --main-padding-26_38: clamp(1.625rem, 1.36086rem + 1.127vw, 2.375rem);
@@ -42,7 +44,7 @@ body {
   min-height: 100vh;
   font-size: 1rem;
   font-family: "Karla", sans-serif;
-  background-color: var(--grayish-blue);
+  background-color: var(--light-gray);
 }
 
 footer {
@@ -65,8 +67,13 @@ footer {
 .main-card {
   max-width: 640px;
   overflow: hidden;
-  background-color: var(--light-gray);
+  box-shadow: var(--primarily-box-shadow);
+  background-color: var(--additional-color);
   border-radius: var(--primarily-b-radius);
+}
+
+.main-card:hover {
+  box-shadow: var(--secondarily-box-shadow);
 }
 
 .top-side,
