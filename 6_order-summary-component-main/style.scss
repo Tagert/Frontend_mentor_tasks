@@ -1,0 +1,198 @@
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+$white: hsl(0, 0%, 100%);
+
+$padding-spacing-10: 10px;
+$padding-spacing-15: 15px;
+$padding-spacing-20: 20px;
+$padding-spacing-25: 25px;
+$padding-spacing-30: 30px;
+$padding-spacing-25_45: clamp(1.5625rem, 1.12234rem + 1.878vw, 2.8125rem);
+$padding-spacing-25_35: clamp(1.5625rem, 1.34242rem + 0.939vw, 2.1875rem);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 0% -10%;
+  background-size: 100%;
+  background-color: $pale-blue;
+  height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-right: auto;
+    margin-left: auto;
+    padding: $padding-spacing-25;
+
+    .main-card {
+      max-width: 400px;
+      border-radius: 20px;
+      background-color: $white;
+
+      .top-side {
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 20px;
+
+        .image-box {
+          img {
+            max-width: 100%;
+          }
+        }
+
+        .description {
+          text-align: center;
+          padding: $padding-spacing-25 $padding-spacing-25_45;
+
+          h1 {
+            font-size: 25px;
+            padding-bottom: $padding-spacing-20;
+          }
+
+          p {
+            color: $desaturated-blue;
+            line-height: 1.6;
+          }
+        }
+      }
+
+      .middle-side {
+        padding: 0px $padding-spacing-25_35;
+
+        .plan-window {
+          display: flex;
+          justify-content: space-between;
+
+          background-color: $very-pale-blue;
+          border-radius: 10px;
+          padding: $padding-spacing-15;
+
+          .plan-text {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .icon-image {
+              display: flex;
+              align-items: center;
+              img {
+                height: 40px;
+              }
+            }
+
+            .plan-price {
+              h2 {
+                font-size: 14px;
+                padding-bottom: 2px;
+              }
+
+              P {
+                letter-spacing: 1px;
+                font-size: 12px;
+                color: $desaturated-blue;
+              }
+            }
+          }
+
+          .change {
+            display: flex;
+            align-items: center;
+            padding-left: $padding-spacing-30;
+
+            a {
+              font-size: 14px;
+              font-weight: bold;
+              padding-right: $padding-spacing-10;
+
+              &:hover {
+                text-decoration: none;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+
+      .bottom-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding: $padding-spacing-25 $padding-spacing-25_35;
+
+        .payment-btn {
+          display: flex;
+          justify-content: center;
+          min-width: 100%;
+          background-color: $bright-blue;
+          border-radius: 10px;
+
+          &:hover {
+            opacity: 0.8;
+            cursor: pointer;
+          }
+
+          a {
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 15px 0px;
+            color: #fefeff;
+          }
+        }
+
+        .order {
+          a {
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            color: $desaturated-blue;
+
+            &:hover {
+              color: black;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Additional */
+
+footer {
+  position: absolute;
+  top: 98%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .attribution {
+    font-size: 0.88rem;
+    text-align: center;
+    min-width: 350px;
+    color: var(--white);
+
+    a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+}
