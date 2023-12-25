@@ -15,7 +15,7 @@ body {
 
 .preview-card-section .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   min-height: 100vh;
   margin-right: auto;
@@ -24,18 +24,45 @@ body {
 }
 .preview-card-section .container .main-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   border-radius: 10px;
   background-color: hsl(244, 38%, 16%);
 }
+@media screen and (min-width: 500px) {
+  .preview-card-section .container .main-card {
+    max-height: 710px;
+    max-width: 460px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .preview-card-section .container .main-card {
+    display: flex;
+    flex-direction: row;
+    max-height: 370px;
+    max-width: 64%;
+  }
+}
 .preview-card-section .container .main-card .image-box {
   display: inline-block;
   width: 100%;
   height: 240px;
   background-color: hsl(277, 64%, 61%);
+}
+@media screen and (min-width: 500px) {
+  .preview-card-section .container .main-card .image-box {
+    min-height: 355px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .preview-card-section .container .main-card .image-box {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+  }
 }
 .preview-card-section .container .main-card .image-box img {
   -o-object-fit: cover;
@@ -51,12 +78,24 @@ body {
   gap: 40px;
   padding: 45px 25px 25px 25px;
 }
+@media screen and (min-width: 500px) {
+  .preview-card-section .container .main-card .description-box {
+    min-height: 355px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .preview-card-section .container .main-card .description-box {
+    padding: 50px;
+    width: 50%;
+  }
+}
 .preview-card-section .container .main-card .description-box .info {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 .preview-card-section .container .main-card .description-box .info h1 {
+  max-width: 285px;
   font-size: 26px;
   font-family: "Inter", sans-serif;
   letter-spacing: 0.7px;
@@ -67,7 +106,15 @@ body {
 .preview-card-section .container .main-card .description-box .info h1 span {
   color: hsl(277, 64%, 61%);
 }
+@media screen and (min-width: 1440px) {
+  .preview-card-section .container .main-card .description-box .info h1 {
+    max-width: 100%;
+    text-align: left;
+    padding: 0;
+  }
+}
 .preview-card-section .container .main-card .description-box .info p {
+  max-width: 285px;
   font-size: 14px;
   font-weight: 200;
   line-height: 1.8;
@@ -77,6 +124,14 @@ body {
   font-family: "Inter", sans-serif;
   color: hsla(0, 0%, 100%, 0.75);
 }
+@media screen and (min-width: 1440px) {
+  .preview-card-section .container .main-card .description-box .info p {
+    max-width: 94%;
+    text-align: left;
+    font-size: 12px;
+    padding: 0;
+  }
+}
 .preview-card-section .container .main-card .stats {
   display: flex;
   flex-direction: column;
@@ -84,13 +139,38 @@ body {
   align-items: center;
   gap: 30px;
 }
+@media screen and (min-width: 500px) {
+  .preview-card-section .container .main-card .stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .preview-card-section .container .main-card .stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 280px;
+    height: 100%;
+  }
+}
 .preview-card-section .container .main-card .stats p {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
   color: hsl(0, 0%, 100%);
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+@media screen and (min-width: 1440px) {
+  .preview-card-section .container .main-card .stats p {
+    align-items: flex-start;
+    font-size: 20px;
+  }
 }
 .preview-card-section .container .main-card .stats p span {
   font-weight: 400;
@@ -101,7 +181,12 @@ body {
   font-family: "Inter", sans-serif;
   color: hsla(0, 0%, 100%, 0.6);
 }
-.preview-card-section .container .main-card .stats p:last-child {
+@media screen and (min-width: 1440px) {
+  .preview-card-section .container .main-card .stats p span {
+    font-size: 8px;
+  }
+}
+.preview-card-section .container .main-card .stats p span:last-child {
   text-transform: uppercase;
 }
 
