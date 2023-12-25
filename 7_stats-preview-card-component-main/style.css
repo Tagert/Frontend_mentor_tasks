@@ -42,7 +42,7 @@ body {
     display: flex;
     flex-direction: row;
     max-height: 370px;
-    max-width: 64%;
+    max-width: 900px;
   }
 }
 .preview-card-section .container .main-card .image-box {
