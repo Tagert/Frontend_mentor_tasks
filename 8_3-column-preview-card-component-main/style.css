@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.card-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.card-section .main-card-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 335px;
+  background-color: hsl(0, 0%, 95%);
+}
+@media screen and (min-width: 1440px) {
+  .card-section .main-card-box {
+    flex-direction: row;
+    max-width: 840px;
+  }
+}
+.card-section .main-card-box .left-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 50px 40px 50px 35px;
+}
+@media screen and (min-width: 1440px) {
+  .card-section .main-card-box .left-box {
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+    padding: 40px 40px 40px 35px;
+  }
+}
+.card-section .main-card-box .left-box img {
+  width: 60px;
+}
+.card-section .main-card-box .left-box h2 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 40px;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  color: hsl(0, 0%, 95%);
+}
+@media screen and (min-width: 1440px) {
+  .card-section .main-card-box .left-box h2 {
+    padding-top: 30px;
+  }
+}
+.card-section .main-card-box .left-box p {
+  line-height: 1.8;
+  opacity: 0.8;
+  padding-bottom: 20px;
+  padding-right: 35px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+@media screen and (min-width: 1440px) {
+  .card-section .main-card-box .left-box p {
+    padding-right: 0px;
+    padding-bottom: 55px;
+  }
+}
+.card-section .main-card-box .left-box button {
+  height: 46px;
+  width: 140px;
+  border-radius: 40px;
+  border: none;
+  font-size: 14px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 500;
+  color: hsl(31, 77%, 52%);
+  background-color: hsl(0, 0%, 95%);
+}
+.card-section .main-card-box .middle-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 50px 40px 50px 35px;
+  background-color: hsl(184, 100%, 22%);
+}
+@media screen and (min-width: 1440px) {
+  .card-section .main-card-box .middle-box {
+    padding: 40px 40px 40px 35px;
+  }
+}
+.card-section .main-card-box .middle-box img {
+  width: 60px;
+}
+.card-section .main-card-box .middle-box h2 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 40px;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  color: hsl(0, 0%, 95%);
+}
+@media screen and (min-width: 1440px) {
+  .card-section .main-card-box .middle-box h2 {
+    padding-top: 30px;
+  }
+}
+.card-section .main-card-box .middle-box p {
+  line-height: 1.6;
+  opacity: 0.8;
+  padding-bottom: 20px;
+  padding-right: 35px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+@media screen and (min-width: 1440px) {
+  .card-section .main-card-box .middle-box p {
+    padding-right: 0px;
+    padding-bottom: 55px;
+  }
+}
+.card-section .main-card-box .middle-box button {
+  height: 46px;
+  width: 140px;
+  border-radius: 40px;
+  border: none;
+  font-size: 14px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 500;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(184, 100%, 22%);
+}
+.card-section .main-card-box .right-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 50px 40px 50px 35px;
+  background-color: hsl(179, 100%, 13%);
+}
+@media screen and (min-width: 1440px) {
+  .card-section .main-card-box .right-box {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    padding: 40px 40px 40px 35px;
+  }
+}
+.card-section .main-card-box .right-box img {
+  width: 60px;
+}
+.card-section .main-card-box .right-box h2 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 40px;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  color: hsl(0, 0%, 95%);
+}
+@media screen and (min-width: 1440px) {
+  .card-section .main-card-box .right-box h2 {
+    padding-top: 30px;
+  }
+}
+.card-section .main-card-box .right-box p {
+  line-height: 1.6;
+  opacity: 0.8;
+  padding-bottom: 20px;
+  padding-right: 35px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+@media screen and (min-width: 1440px) {
+  .card-section .main-card-box .right-box p {
+    padding-right: 0px;
+    padding-bottom: 55px;
+  }
+}
+.card-section .main-card-box .right-box button {
+  height: 46px;
+  width: 140px;
+  border-radius: 40px;
+  border: none;
+  font-size: 14px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 500;
+  color: hsl(179, 100%, 13%);
+  background-color: hsl(0, 0%, 95%);
+}
+
+footer {
+  position: absolute;
+  top: 98%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+footer .attribution {
+  font-size: 0.8rem;
+  text-align: center;
+  min-width: 350px;
+  color: hsl(179, 100%, 13%);
+}
+footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
