@@ -71,6 +71,10 @@ body {
           font-size: 3.438rem;
           text-align: left;
         }
+
+        @include responsive.xl {
+          padding-top: 97px;
+        }
       }
 
       p {
@@ -94,7 +98,7 @@ body {
       flex-direction: column;
       justify-content: center;
       gap: 15px;
-      padding-top: 45px;
+      padding-top: 105px;
 
       @include responsive.xs {
       }
