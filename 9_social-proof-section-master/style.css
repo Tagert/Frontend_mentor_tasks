@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-size: 0.938rem;
+  font-family: "League Spartan", sans-serif;
+  background-image: url("./images/bg-pattern-top-mobile.svg"), url("./images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 0vw bottom 150vh, left 0vw top 120vh;
+  background-color: hsl(0, 0%, 100%);
+}
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url("./images/bg-pattern-top-desktop.svg"), url("./images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 65vw bottom 57vh, left 25vw top 20vh;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 18px clamp(1.125rem, -2.767rem + 16.6061vw, 9.6875rem);
+}
+
+@media screen and (min-width: 1000px) {
+  .description-rating-box .header-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .description-rating-box .header-section {
+    justify-content: space-between;
+  }
+}
+.description-rating-box .header-section .description h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 55px;
+  color: hsl(300, 43%, 22%);
+}
+@media screen and (min-width: 500px) {
+  .description-rating-box .header-section .description h1 {
+    width: 465px;
+    font-size: 3.438rem;
+    text-align: left;
+  }
+}
+.description-rating-box .header-section .description p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.2;
+  padding-top: 20px;
+  color: hsl(303, 10%, 53%);
+}
+@media screen and (min-width: 500px) {
+  .description-rating-box .header-section .description p {
+    width: 465px;
+    text-align: left;
+    line-height: 1.4;
+  }
+}
+.description-rating-box .header-section .rating-boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  padding-top: 45px;
+}
+.description-rating-box .header-section .rating-boxes .rate-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in;
+  background-color: hsl(300, 24%, 96%);
+}
+@media screen and (min-width: 500px) {
+  .description-rating-box .header-section .rating-boxes .rate-box {
+    flex-direction: row;
+    width: 450px;
+    gap: 30px;
+    padding: 20px 0px 20px 30px;
+  }
+}
+.description-rating-box .header-section .rating-boxes .rate-box .stars {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.description-rating-box .header-section .rating-boxes .rate-box .stars img {
+  width: 17px;
+}
+.description-rating-box .header-section .rating-boxes .rate-box .what-rating p {
+  font-size: 1.063rem;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+}
+@media screen and (min-width: 1000px) {
+  .description-rating-box .header-section .rating-boxes .report-rating {
+    margin-left: 45px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .description-rating-box .header-section .rating-boxes .best-tech-rating {
+    margin-left: 90px;
+  }
+}
+
+.buyer-box .card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 73px;
+}
+@media screen and (min-width: 800px) {
+  .buyer-box .card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .buyer-box .card-container {
+    gap: 30px;
+  }
+}
+.buyer-box .card-container .buyer-card {
+  max-width: 350px;
+  border-radius: 10px;
+  padding: 40px 40px 25px;
+  background-color: hsl(300, 43%, 22%);
+  transition: all 0.3s ease-in;
+}
+@media screen and (min-width: 800px) {
+  .buyer-box .card-container .buyer-card {
+    height: 234px;
+  }
+}
+.buyer-box .card-container .buyer-card .top-side {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.buyer-box .card-container .buyer-card .top-side img {
+  width: 40px;
+  border-radius: 50%;
+}
+.buyer-box .card-container .buyer-card .top-side .avatar-description {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.buyer-box .card-container .buyer-card .top-side .avatar-description h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.9;
+  color: hsl(0, 0%, 100%);
+}
+.buyer-box .card-container .buyer-card .top-side .avatar-description h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.9;
+  color: hsl(333, 80%, 67%);
+}
+.buyer-box .card-container .buyer-card .bottom-side p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-top: 20px;
+  color: hsl(0, 0%, 100%);
+}
+@media screen and (min-width: 1440px) {
+  .buyer-box .card-container .second-card {
+    margin-top: 35px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .buyer-box .card-container .third-card {
+    margin-top: 69px;
+  }
+}
+
+footer {
+  position: absolute;
+  top: 99%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+footer .attribution {
+  font-size: 0.8rem;
+  text-align: center;
+  min-width: 350px;
+  color: hsl(300, 43%, 22%);
+}
+footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
