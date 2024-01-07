@@ -21,16 +21,18 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding: 1.25rem clamp(1.125rem, -2.767rem + 16.6061vw, 9.6875rem);
+  padding: 1.25rem clamp(2rem, -0.59688rem + 11.08vw, 9.375rem);
 }
 
 .card-box-container .left-side {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
-  padding: 1.8rem 3rem;
-  background: linear-gradient(180deg, rgb(120, 87, 255) 0%, rgb(46, 43, 233) 100%);
+  gap: 1.6rem;
+  padding: 1.5rem 3rem 2.3rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background: linear-gradient(180deg, rgb(120, 87, 255) 0%, rgb(46, 43, 233) 40%);
 }
 .card-box-container .left-side .result h1 {
   font-size: 1.1rem;
@@ -42,20 +44,114 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  height: 8rem;
-  width: 8rem;
+  background: linear-gradient(180deg, hsla(224, 30%, 27%, 0.3) 0%, rgb(46, 43, 233) 100%);
+  height: 8.5rem;
+  width: 8.5rem;
   border-radius: 50%;
 }
 .card-box-container .left-side .score h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 3.5rem;
+  color: hsl(0, 0%, 100%);
+}
+.card-box-container .left-side .score h2 span {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.8;
+  color: hsl(221, 100%, 96%);
+}
+.card-box-container .left-side .left-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+.card-box-container .left-side .left-description h2 {
+  color: hsl(0, 0%, 100%);
+}
+.card-box-container .left-side .left-description p {
+  font-weight: 500;
+  text-align: center;
+  opacity: 0.8;
+  color: hsl(221, 100%, 96%);
+}
+.card-box-container .right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.card-box-container .right-side .summary h2 {
+  font-size: 1.15rem;
+}
+.card-box-container .right-side .data-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.card-box-container .right-side .data-list .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1.1rem 1rem;
+  border-radius: 0.8rem;
+  background-color: azure;
+}
+.card-box-container .right-side .data-list .row p {
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+.card-box-container .right-side .data-list .row p span {
+  font-weight: 700;
+  color: grey;
+}
+.card-box-container .right-side .data-list .row .row-left {
+  display: flex;
+  gap: 1rem;
+}
+.card-box-container .right-side .data-list .red {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+.card-box-container .right-side .data-list .red .left-red p {
+  color: hsl(0, 100%, 67%);
+}
+.card-box-container .right-side .data-list .yellow {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+.card-box-container .right-side .data-list .yellow .left-yellow p {
+  color: hsl(39, 100%, 56%);
+}
+.card-box-container .right-side .data-list .green {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+.card-box-container .right-side .data-list .green .left-green p {
+  color: hsl(166, 100%, 37%);
+}
+.card-box-container .right-side .data-list .blue {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+.card-box-container .right-side .data-list .blue .left-blue p {
+  color: hsl(234, 85%, 45%);
+}
+.card-box-container .right-side .primary-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  padding: 1.1rem 1rem;
+  background-color: hsl(224, 30%, 27%);
+}
+.card-box-container .right-side .primary-btn a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
 }
 
 footer {
   position: absolute;
-  top: 99%;
+  top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
